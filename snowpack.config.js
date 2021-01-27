@@ -3,19 +3,19 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-  mount: {
-    /* ... */
-  },
-  plugins: [
-    /* ... */
-  ],
-  packageOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
+	mount: {
+		// directory name: 'build directory'
+		public: "/",
+		src: "/dist",
+	},
+	plugins: ["@snowpack/plugin-postcss"],
+	packageOptions: {
+		/* ... */
+	},
+	devOptions: {
+		/* ... */
+	},
+	buildOptions: {
+		/* ... */
+	},
 };
